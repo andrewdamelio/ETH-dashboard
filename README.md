@@ -4,7 +4,7 @@ A mesh of Ethereum wallet information - create and customize your own dashboads.
 
 https://dashboard.rip
 
-![image](https://user-images.githubusercontent.com/1683736/50487643-2bd78100-09cd-11e9-92ec-cc5a5e7b1d91.png)
+![image](https://user-images.githubusercontent.com/1683736/50496389-740e9780-09fd-11e9-982f-722638ad00af.png)
 ![image](https://user-images.githubusercontent.com/1683736/50488060-afde3880-09ce-11e9-8c98-c4f12fb0c71a.png)
 
 
