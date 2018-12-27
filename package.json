@@ -1,0 +1,36 @@
+{
+  "name": "dapp-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@makerdao/dai": "^0.9.10",
+    "blockies": "^0.0.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "2.1.1",
+    "web3": "^1.0.0-beta.36"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "guppy": {
+    "id": "dappdash",
+    "name": "dApp Dashboard",
+    "type": "create-react-app",
+    "color": "#00bfb5",
+    "icon": "./static/media/icon_blueorange.174c0078.jpg",
+    "createdAt": 1543517945235
+  }
+}

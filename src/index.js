@@ -1,0 +1,22 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './containers/App/';
+import MyProvider, { MyContext } from './Provider';
+import * as serviceWorker from './serviceWorker';
+
+ReactDOM.render(
+  <MyProvider>
+    <MyContext.Consumer>
+      {context =>
+        <App context={context} />
+      }
+    </MyContext.Consumer>
+  </MyProvider>,
+  document.getElementById('root')
+);
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: http://bit.ly/CRA-PWA
+serviceWorker.register();

@@ -1,0 +1,432 @@
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: linear-gradient(to top right, royalblue, rebeccapurple);
+  --font-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-default);
+}
+
+.wrapper {
+  min-height: 100vh;
+  border: 12px solid royalblue;
+  display: grid;
+  grid-gap: 12px;
+}
+
+.box {
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  padding: 20px;
+  transition: 1s background ease;
+}
+
+.locked {
+  opacity: 0.75;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  cursor: pointer;
+}
+
+.MetaMask__box {
+  grid-column: 1 / 2;
+}
+
+.Ujo__box {
+  grid-column: 2 / 3;
+}
+
+.Kudos__box {
+  grid-column: 3 / 5;
+  grid-row: 1;
+}
+
+.ThreeBox__box {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+}
+
+.MakerDAO__box {
+  grid-column: 2 / 5;
+  grid-row: 3;
+}
+
+.Bounties__box {
+  grid-column: 1 / 5;
+  grid-row: 4;
+}
+
+.CryptoKitties__box {
+  grid-column: 2 / 3;
+}
+
+.Kaijus__box {
+  grid-column: 3 / 5;
+}
+
+
+/* METAMASK */
+
+.MetaMask {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.MetaMask__avatar {
+  margin: 1rem;
+  width: 55px;
+  border-radius: 50%;
+}
+
+.MetaMask__eth {
+  font-size: 3rem;
+}
+
+
+/* UJO */
+
+.Ujo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Ujo__artwork {
+  height: 120px;
+  cursor: pointer;
+}
+
+.Ujo__album {
+  font-weight: 500;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.Ujo__play {
+  display: flex;
+  justify-content: center;
+  font-size: 0.25rem;
+}
+
+.Ujo__play--circle {
+  height: 12px;
+  width: 12px;
+  background: green;
+  border-radius: 8px;
+  margin-right: 0.25rem;
+}
+
+.Ujo__play--circle:hover {
+  background: greenyellow;
+  cursor: pointer;
+}
+
+.Ujo__song {
+  display: none;
+}
+
+.Ujo__play--circleON {
+  animation: pulse 0.25s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: green;
+  }
+  100% {
+    background-color: greenyellow;
+  }
+}
+
+/* KUDOS */
+
+.Kudos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Kudos img {
+  cursor: pointer;
+}
+
+.Kudos--name {
+  font-weight: 500;
+  text-align: center;
+}
+
+
+/* 3BOX LOGO */
+
+#ThreeBox__logo--big {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Lato, sans-serif;
+}
+
+#ThreeBox__logo--big__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  background-color: #fff;
+  position: relative;
+}
+
+#ThreeBox__logo--big__icon h2 {
+  color: black;
+  opacity: 0.75;
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: absolute;
+  margin: 0;
+  left: 12px;
+}
+
+#ThreeBox__logo--big__text {
+  display: inline-block;
+  color: #fff;
+  margin: 0;
+  margin-left: .37em;
+  font-size: 2.5rem;
+}
+
+#ThreeBox__logo--small {
+  font-family: Lato, sans-serif;
+  display: flex;
+}
+
+#ThreeBox__logo--small__icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  background-color: #006ecc;
+  position: relative;
+}
+
+#ThreeBox__logo--small__icon h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: absolute;
+  margin: 0;
+  top: -1px;
+  left: 7px;
+}
+
+#ThreeBox__logo--small__text {
+  display: inline-block;
+  color: #006ecc;
+  margin: 0;
+  margin-left: .37em;
+  font-size: 1.5rem;
+}
+
+
+/* 3BOX */
+
+.ThreeBox {
+  border-radius: 10px;
+  background: rgba(96, 125, 139, 0.09);
+  width: 16em;
+  box-shadow: 0 6px 10px 0 #00000025, 0 16px 24px 0 #0000002f;
+  margin: 4rem auto;
+}
+
+.ThreeBox__profile {
+  background-color: #3f3f3f;
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: perspective(1px) translateY(-30%) translateX(-50%);
+}
+
+.ThreeBox__network {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ThreeBox__network__icon {
+  border-radius: 100%;
+  background-color: #5ecd78;
+  width: 19px;
+  height: 19px;
+}
+
+.ThreeBox__address {
+  margin-left: 0.25rem;
+}
+
+.ThreeBox__info {
+  padding: 2em;
+  margin-top: -9em;
+  text-align: center;
+}
+
+.ThreeBox__info__username {
+  font-size: 1.4em;
+  margin-top: 1.7em;
+  margin-bottom: 1.7em;
+  user-select: none;
+}
+
+
+/* CRYPTOKITTIES */
+
+.CryptoKitties {
+  text-align: center;
+}
+
+.CryptoKitties img {
+  cursor: pointer;
+}
+
+.CryptoKitties__stats {
+  font-weight: 500;
+  color: #9c9c9b;
+}
+
+.CryptoKitties__stats--name {
+  color: #2a2825;
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+
+/* KAIJUS */
+
+.Kaijus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+}
+
+.Kaijus__kaijus--name {
+  font-weight: 500;
+  text-align: center;
+}
+
+
+/* PEEPETH */
+
+.PeePeth {
+  width: fit-content;
+  margin: auto;
+  padding: 1rem;
+  border: 2px solid #f5f6f8;
+}
+
+.PeePeth--user {
+  color: grey;
+  margin-bottom: 1rem;
+}
+
+.PeePeth--user span {
+  color: #000;
+  font-weight: 800;
+}
+
+.PeePeth--content {
+  font-size: 1.25rem;
+}
+
+.PeePeth--image img {
+  height: 185px;
+}
+
+/* MakerDAO */
+
+.MakerDAO {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-height: 200px;
+}
+
+.MakerDAO__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5rem;
+  margin: 1rem;
+  flex: 1 1 auto;
+  min-width: 250px;
+  word-wrap: break-word;
+  border: 1px solid #edf2f9;
+  border-radius: 8px;
+  background-color: #f9fbfd;
+  box-shadow: 0 6px 10px 0 #00000025, 0 16px 24px 0 #0000002f;
+}
+
+.MakerDAO__card__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.MakerDAO__card__group--heading {
+  font-size: 15px;
+  font-weight: 500;
+  color: #95aac9;
+  margin: 0 0 0.25rem;
+}
+
+.MakerDAO__card__group--value {
+  font-size: 26px;
+  font-weight: 500;
+  color: black;
+}
+
+.circle {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  margin: 0 0 0 0.25rem;
+}
+
+.circle--red {
+  background: #e63757;
+}
+
+
+.circle--green {
+  background: #00d97e;
+}
+
+.MakerDAO__watchCDP {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  text-align: center;
+  margin: auto;
+}
+
+.MakerDAO__watchCDP input {
+  margin: 0.25rem;
+}
